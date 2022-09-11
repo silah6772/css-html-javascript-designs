@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated custom dropdown</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="dropdown">
+    <input type="text " class="text02" readonly placeholder="Dropdown Menu">
+    <div class="option">
+        <div onmouseover="showValue('Html')">Html</div>
+        <div onmouseover="showValue('Css')">Css</div>
+        <div onmouseover="showValue('Javascript')">Javascript</div>
+        <div onmouseover="showValue('React js')">React Js</div>
+        <div onmouseover="showValue('Photoshop')">Photoshop</div>
+    </div>
+</div>
+
+<script>
+    function showValue(value) {
+        document.querySelector('.text02').value = value
+    }
+    let dropdown = document.querySelector('.dropdown');
+    dropdown.onclick = function () {
+        dropdown.classList.toggle('active')
+    }
+</script>
+</body>
+</html>

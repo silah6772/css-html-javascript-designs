@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="box">
+    <input type="range" value="0" min="0" max="100" class="range" onmousemove="rangeSlider(this.value)">
+    <span id="rangeValue">0</span>
+</div>
+<script>
+    function rangeSlider(value) {
+        document.getElementById('rangeValue').innerHTML = value
+    }
+</script>
+</body>
+</html>
